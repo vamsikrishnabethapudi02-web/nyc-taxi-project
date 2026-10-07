@@ -1,0 +1,10 @@
+pickup_area,trips,high_fare_trips,sum_fare,high_fare_share_pct,share_of_all_trips_pct,avg_fare
+JFK Airport,229533,220942,10647997.91,96.26,2.0,46.39
+LaGuardia Airport,268110,250161,8259973.96,93.31,2.33,30.81
+Queens,123335,36658,1831055.05,29.72,1.07,14.85
+Brooklyn,206447,57583,2799423.79,27.89,1.8,13.56
+Bronx,9203,2546,134564.99,27.66,0.08,14.62
+"Other (Staten Is., NJ, edges)",4871,1053,78450.34,21.62,0.04,16.11
+Manhattan: below 14th St,2367873,482175,28376017.73,20.36,20.6,11.98
+Manhattan: 14th to 59th St,5685411,782113,62152770.76,13.76,49.45,10.93
+Manhattan: above 59th St,2601663,348320,27022986.13,13.39,22.63,10.39
