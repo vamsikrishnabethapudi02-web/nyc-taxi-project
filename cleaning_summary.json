@@ -1,0 +1,89 @@
+{
+  "backend": "pandas (CPU)",
+  "keep_fraction": 0.25,
+  "source_rows_total": 47248845,
+  "source_rows_per_file": {
+    "yellow_tripdata_2015-01.csv": 12748986,
+    "yellow_tripdata_2016-01.csv": 10906858,
+    "yellow_tripdata_2016-02.csv": 11382049,
+    "yellow_tripdata_2016-03.csv": 12210952
+  },
+  "source_files": [
+    "yellow_tripdata_2015-01.csv",
+    "yellow_tripdata_2016-01.csv",
+    "yellow_tripdata_2016-02.csv",
+    "yellow_tripdata_2016-03.csv"
+  ],
+  "rows_raw": 11812210,
+  "rows_clean": 11496446,
+  "pct_retained": 97.327,
+  "columns_raw": 19,
+  "columns_clean": 27,
+  "funnel": [
+    {
+      "step": "Exact duplicates",
+      "rows_removed": 61
+    },
+    {
+      "step": "Missing key field",
+      "rows_removed": 0
+    },
+    {
+      "step": "Pickup outside study period",
+      "rows_removed": 0
+    },
+    {
+      "step": "Dropoff not after pickup",
+      "rows_removed": 12989
+    },
+    {
+      "step": "Duration < 1 min or > 3 h",
+      "rows_removed": 97907
+    },
+    {
+      "step": "Passengers not in 1-6",
+      "rows_removed": 1706
+    },
+    {
+      "step": "Distance <= 0 or > 100 mi",
+      "rows_removed": 13443
+    },
+    {
+      "step": "Fare <= 0 or > $500",
+      "rows_removed": 3882
+    },
+    {
+      "step": "Total amount <= 0",
+      "rows_removed": 1
+    },
+    {
+      "step": "GPS outside NYC",
+      "rows_removed": 184898
+    },
+    {
+      "step": "Rate code / payment type invalid",
+      "rows_removed": 128
+    },
+    {
+      "step": "Speed > 80 mph",
+      "rows_removed": 749
+    }
+  ],
+  "rule_counts_before": {
+    "Missing key field": 0,
+    "Pickup outside study period": 0,
+    "Dropoff not after pickup": 12989,
+    "Duration < 1 min or > 3 h": 110896,
+    "Passengers not in 1-6": 2112,
+    "Distance <= 0 or > 100 mi": 70806,
+    "Fare <= 0 or > $500": 7895,
+    "Total amount <= 0": 5399,
+    "GPS outside NYC": 216027,
+    "Rate code / payment type invalid": 346,
+    "Speed > 80 mph": 9591
+  },
+  "schema_notes": [
+    "yellow_tripdata_2015-01.csv: column names differ in capitalisation, harmonised {'RateCodeID': 'RatecodeID'}"
+  ],
+  "runtime_sec": 521.1
+}

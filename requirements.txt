@@ -1,0 +1,7 @@
+pandas
+numpy
+matplotlib
+pyarrow
+jupyter
+# Optional, for the GPU-accelerated path (needed for the "GPU-accelerated EDA" rubric item):
+# RAPIDS cuDF, install per https://docs.rapids.ai/install  (or use a GPU Colab/lab runtime that ships it)
